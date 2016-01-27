@@ -7,70 +7,69 @@
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" /> <!--FontAwesome-->
-    <link href='//fonts.googleapis.com/css?family=PT+Sans:400' rel='stylesheet' type='text/css'> <!-- Font -->
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-  
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> -->
-
-    <title>Home lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title><title><?php echo "($totalon/$totalcount) "; ?> Home lab</title></title>
 </head>
-  
 <body>
-<div class="cd-tabs">
+<nav class="cd-tabs">
+  <ul class="cd-tabs-navigation">       
+  	<li><a data-content="Home" class="selected" href="#0"><span class="fa fa-home fa-lg"></span> Home</a></li>
 
-    <ul class="cd-tabs-navigation">       
-		<li><a data-content="Home" class="selected" href="#0"><span class="fa fa-home fa-lg"></span> Home</a></li>
-		<li><a href="#" onclick="window.open('http://','_blank')"><span class="fa fa-area-chart fa-lg"></span> LibreNMS</a></li>
-        <li><a href="#" onclick="window.open('http://','_blank')"><span class="glyphicon glyphicon-modal-window fa-lg"></span> Guacamole</a></li>
-      
-        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-signal fa-lg"></span> MikroTik <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                  <li><a data-content="MikroTikRouter01" href="#0"><span class="fa fa-square"></span> MT 01 </a></li>                
-                  <li><a data-content="MikroTikSwitch01" href="#0"><span class="fa fa-square"></span> MT 02</a></li>
-              </ul>  
-         </li>
+  	<li><a href="#" onclick="window.open('http://','_blank')"><span class="fa fa-area-chart fa-lg"></span> LibreNMS</a></li>
 
-        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-server fa-lg"></span> vCenter <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 01</a></li>
-              	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 02</a></li>
-              </ul>  
-         </li>           
+    <li><a href="#" onclick="window.open('http://','_blank')"><span class="glyphicon glyphicon-modal-window fa-lg"></span> Guacamole</a></li>
       
-        <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-object-ungroup fa-lg"></span> Webmin <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 01</a></li>                
-                  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 02</a></li>
-              	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 03</a></li>
-              	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 04</a></li>    
-              	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 05</a></li>
-              	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 06</a></li>  
-              	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 07</a></li>              
-              </ul>  
-         </li>      
-      	
-      	<li><a href="#" onclick="window.open('http://','_blank')"><span class="fa fa-wikipedia-w fa-lg"></span> Dokuwiki</a></li>
-		<li><a data-content="Transmission" href="#0"><span class="fa fa-download fa-lg"></span> Transmission</a></li>
-      	<li><a data-content="SickRage" href="#0"><span class="fa fa-television fa-lg"></span> SickRage</a></li>
-		<li><a data-content="Kodi" href="#0"><span class="fa fa-play-circle fa-lg"></span> Kodi</a></li>
-    </ul>
+    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-signal fa-lg"></span> MikroTik <i class="caret"></i></a>
+        <ul class="dropdown-menu">
+              <li><a data-content="MikroTikRouter01" href="#0"><span class="fa fa-square"></span> MT 01 </a></li>                
+              <li><a data-content="MikroTikSwitch01" href="#0"><span class="fa fa-square"></span> MT 02</a></li>
+          </ul>  
+     </li>
+
+    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-server fa-lg"></span> vCenter <i class="caret"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 01</a></li>
+    	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 02</a></li>
+      </ul>  
+    </li>           
   
-  	<ul class="cd-tabs-content" style="height:100px;">
-		<ul class="cd-tabs-content">
+    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="fa fa-object-ungroup fa-lg"></span> Webmin <i class="caret"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 01</a></li>                
+        <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 02</a></li>
+    	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 03</a></li>
+    	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 04</a></li>    
+    	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 05</a></li>
+    	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 06</a></li>  
+    	  <li><a href="#" onclick="window.open('https://','_blank')"><span class="fa fa-square"></span> 07</a></li>              
+      </ul>  
+    </li>      
+      	
+    <li><a href="#" onclick="window.open('http://','_blank')"><span class="fa fa-wikipedia-w fa-lg"></span> Dokuwiki</a></li>
+		
+    <li><a data-content="Transmission" href="#0"><span class="fa fa-download fa-lg"></span> Transmission</a></li>
+    
+    <li><a data-content="SickRage" href="#0"><span class="fa fa-television fa-lg"></span> SickRage</a></li>
+		
+    <li><a data-content="Kodi" href="#0"><span class="fa fa-play-circle fa-lg"></span> Kodi</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <ul class="cd-tabs-content">
 		<li data-content="Home" class="selected">
-		<iframe scrolling=auto src="homelab.php" style="width:100%; height:926px"></iframe>
+		  <iframe scrolling=auto src="homelab.php" style="width:100%; height:926px"></iframe>
 		</li>
 
-   		<li data-content="MikroTikRouter01">
-		<iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
+   	<li data-content="MikroTikRouter01">
+		  <iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
 		</li>
 
-   		<li data-content="MikroTikSwitch01">
-		<iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
+   	<li data-content="MikroTikSwitch01">
+		  <iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
 		</li>
          
 		<li data-content="Transmission">
@@ -78,18 +77,18 @@
 		</li>          
           
 		<li data-content="SickRage">
-		<iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
+		  <iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
 		</li>
 
 		<li data-content="Kodi">
-		<iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
+		  <iframe scrolling=auto src="http://" style="width:100%; height:926px"></iframe>
 		</li>
-	</ul>      
-               
+	</ul>          
 </div>
-<head><title><?php echo "($totalon/$totalcount) "; ?>Home lab</title></head>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
 
+<script src="js/modernizr.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>                                		
